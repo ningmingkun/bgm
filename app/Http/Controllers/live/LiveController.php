@@ -56,7 +56,7 @@ class LiveController extends Controller
             }else{
                 echo '登陆成功';
                 session(['username'=>$info['username']]);
-                return redirect('/index');
+                return redirect('//index');
             }
         }else{
             echo '登陆失败';
