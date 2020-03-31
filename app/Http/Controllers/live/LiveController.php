@@ -40,6 +40,8 @@ class LiveController extends Controller
         return view('login/login');
     }
 
+
+
         public function login_do(Request $request)
     {
         $username = $request->input('username');
@@ -56,13 +58,23 @@ class LiveController extends Controller
             }else{
                 echo '登陆成功';
                 session(['username'=>$info['username']]);
-                return redirect('//index');
+                return redirect('index/index');
             }
         }else{
             echo '登陆失败';
         }
 
 
-    }
+    
+}
+
+	  public function index()
+{
+        return view('index/index');
+}
+
+
+
+
 }
 

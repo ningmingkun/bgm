@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 Route::get('live/index','live\IndexController@index');//登陆视图
-//Routt::get('/index','live\LiveController@index');
+Route::get('index/index','live\LiveController@index');
 
 Route::get('live/reg','live\LiveController@reg');//注册视图
 Route::post('live/reg_do','live\LiveController@reg_do');//注册
