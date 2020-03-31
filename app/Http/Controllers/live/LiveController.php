@@ -40,7 +40,7 @@ class LiveController extends Controller
         return view('login/login');
     }
 
-    public function login_do(Request $request)
+        public function login_do(Request $request)
     {
         $username = $request->input('username');
         $pwd = $request->input('pwd');
@@ -65,3 +65,4 @@ class LiveController extends Controller
 
     }
 }
+
