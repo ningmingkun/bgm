@@ -16,8 +16,8 @@
     <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
 
 </head>
-<body>
-<div class="layui-fluid">
+</body>
+    <div class="layui-fluid">
     <div class="layui-row">
         <form class="layui-form" action="{{url('live/login_do')}}" method="post">
             <div class="layui-form-item">
@@ -45,7 +45,8 @@
                 <div class="layui-input-inline">
                     <input type="password" id="L_repass" name="pwd1" required="" lay-verify="repass"
                            autocomplete="off" class="layui-input">
-                </div>
+                </div> 
+               
             </div>
             <div class="layui-form-item">
                 <label for="L_repass" class="layui-form-label">
