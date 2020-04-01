@@ -36,7 +36,7 @@
         //顶部导航条
         CS.topNav.init(getUserInfoAjaxUrl, getUserNewMsgUrl);
     });
-</script><div class="pageCenter"><div class="bookheader cf"><div class="logo fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！" src="/static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div class="searchClass" id="searchClass"><em type="all" id="currentSiteBtn">全部</em><div id="searchSiteList" class="searchClass_SubBox" style="display:none;"><a href="javascript:" type="all">全部</a><a href="javascript:" type="chuangshi">创世</a><a href="javascript:" type="yunqi">云起</a><a href="javascript:" type="dushu">图书</a></div></div><span></span><input id="searchInputBySite" type="text" class="clearInput" style="color: rgb(153, 153, 153);"  def="大国重工" value="大国重工"/><input id="searchBySiteBtn" type="button" class="searchBtn"><div class="hotWords">热词： <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">只想继承你的家产</a><a href="http://yunqi.qq.com/bk/gdyq/26550647.html" target="_blank">画春光</a><a href="http://yunqi.qq.com/bk/gdyq/24230535.html" target="_blank">农家小福女</a><a href="http://chuangshi.qq.com/bk/ds/13665778.html" target="_blank">三界红包群</a><a href="http://chuangshi.qq.com/bk/xx/20468795.html" target="_blank">飞剑问道</a><a href="http://chuangshi.qq.com/bk/xh/614782.html" target="_blank">全职法师</a></div></div><div id="headQrCode" class="headQrCode fr"><p>下载QQ阅读</p><img width="80" height="80" src="/static/picture/code03.png"><a href="javascript:" class="close"></a></div></div><script type="text/javascript" src="/static/js/subnav.js"></script><script type="text/javascript">    var searchResultUrl = "/search/index/type/p1/wd/p2.html";
+</script><div class="pageCenter"><div class="bookheader cf"><div class="logo fl"><a href="http://book.qq.com"><img alt="腾讯文学，文字之美，感动心灵！" src="/static/picture/txwxlogo.jpg"></a></div><div class="titleSearch fl cf"><div class="searchClass" id="searchClass"><em type="all" id="currentSiteBtn">全部</em><div id="searchSiteList" class="searchClass_SubBox" style="display:none;"><a href="javascript:" type="all">全部</a><a href="javascript:" type="chuangshi">创世</a><a href="javascript:" type="yunqi">云起</a><a href="javascript:" type="dushu">图书</a></div></div><span></span><input id="searchInputBySite" type="text" class="clearInput" style="color: rgb(153, 153, 153);"  def="大国重工" value="大国重工"/><input id="searc" type="button" class="searchBtn"><div class="hotWords">热词： <a href="http://yunqi.qq.com/bk/gdyq/26835006.html" target="_blank">只想继承你的家产</a><a href="http://yunqi.qq.com/bk/gdyq/26550647.html" target="_blank">画春光</a><a href="http://yunqi.qq.com/bk/gdyq/24230535.html" target="_blank">农家小福女</a><a href="http://chuangshi.qq.com/bk/ds/13665778.html" target="_blank">三界红包群</a><a href="http://chuangshi.qq.com/bk/xx/20468795.html" target="_blank">飞剑问道</a><a href="http://chuangshi.qq.com/bk/xh/614782.html" target="_blank">全职法师</a></div></div><div id="headQrCode" class="headQrCode fr"><p>下载QQ阅读</p><img width="80" height="80" src="/static/picture/code03.png"><a href="javascript:" class="close"></a></div></div><script type="text/javascript" src="/static/js/subnav.js"></script><script type="text/javascript">    var searchResultUrl = "/search/index/type/p1/wd/p2.html";
 
     $(function () {
         CS.page.subNav.init(searchResultUrl);
@@ -98,5 +98,15 @@
 	});
 </script><script type="text/javascript" src="/static/js/index.js"></script><script type="text/javascript">    $(function(){
         CS.page.index.main.init();
+
     });  
+		$(document).on('click','#search',function(){
+		var input=$("#searchinput").val();
+		var list=$("select[naem='select']").val();
+		location.href="{{url('index/search')}}?type="+input+"&list="+list;})
+
+	}
+
+
+
 </script></body></html>
